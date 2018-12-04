@@ -48,7 +48,7 @@ class MakeControllerCommand extends Command
 	}
         ";
 
-        $view_content = "<h1>Hello {$name} </h1>";
+        $view_content = "<h1>Hello {$name}</h1>";
 
         $fileSystem = new Filesystem();
         $fileSystem->mkdir('app/views/'. strtolower($name), 0700);
